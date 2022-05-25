@@ -1,0 +1,84 @@
+.basketNull {
+  color: var(--color-accent);
+  font-style: italic;
+  font-weight: bold;
+
+  h2 {
+    font-size: 30px;
+    margin-top: 40px;
+  }
+
+  p {
+    font-size: 20px;
+    margin-top: 30px;
+  }
+
+  button {
+    width: auto;
+    height: 60px;
+    margin-top: 30px;
+    padding: 0 16px;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: bold;
+  }
+}
+
+.basket-container {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  gap: 30px;
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding: 40px;
+  border-radius: 10px;
+  background-color: var(--color-accent-bold);
+
+  .basket-list {
+    padding: 0;
+    margin: 0;
+  }
+}
+
+.basket-results {
+  font-style: italic;
+  font-size: 20px;
+
+  .basket-total {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-weight: bold;
+    margin-bottom: 40px;
+
+    span:first-child {
+      margin-right: auto;
+    }
+  }
+  .basket-total-choice {
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+
+  .inputRadio label::before {
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+  }
+}
+
+.basket-btn {
+  display: flex;
+  justify-content: center;
+  margin: 50px;
+
+  button {
+    width: auto;
+    height: 80px;
+    padding: 0 30px;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 30px;
+  }
+}

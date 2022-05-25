@@ -1,0 +1,45 @@
+.header {
+  background-color: var(--color-accent-bold);
+
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+  }
+
+  .logo {
+    font-size: 50px;
+    font-weight: 700;
+    -webkit-text-fill-color: var(--color-black);
+    -webkit-text-stroke: 1px var(--color-accent);
+  }
+
+  .block-btn {
+    display: flex;
+  }
+
+  .block-btn a {
+    & span {
+      margin: 0 10px;
+    }
+  }
+
+  .block-btn a:last-child {
+    margin-left: 20px;
+
+  }
+}
+
+.btn-currentProduct {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: 2px solid var(--color-accent-bold);
+  background-color: #ee6c68;
+  font-size: 12px;
+  font-style: italic;
+}

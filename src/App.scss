@@ -1,0 +1,35 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.buttonNavLink {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 33px;
+  padding: 5px 16px;
+  border-radius: 8px;
+  background-color: var(--color-accent);
+  border: none;
+  box-shadow: 0 3px 18px -5px rgba(34, 60, 80, 0.25);
+  font-weight: bold;
+  font-style: italic;
+  cursor: pointer;
+}
+
+.root {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+main {
+  padding-top: 40px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+
+}
+

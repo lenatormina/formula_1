@@ -1,0 +1,29 @@
+.support {
+  margin-top: 40px;
+
+  p {
+    margin: 40px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    font-style: italic;
+    color: var(--color-accent);
+  }
+
+  .support-button-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+
+    button {
+      width: 410px;
+      height: 50px;
+      font-style: italic;
+      font-size: 20px;
+    }
+
+    button:first-child {
+      margin-right: 30px;
+    }
+  }
+}

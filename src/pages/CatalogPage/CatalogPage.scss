@@ -1,0 +1,7 @@
+.catalog-page {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 40px;
+    margin-top: 30px;
+    position: relative;
+}

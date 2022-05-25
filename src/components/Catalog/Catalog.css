@@ -1,0 +1,8 @@
+.catalog-wrapper {
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 50px;
+    column-gap: 40px;
+    margin-bottom: 40px;
+}

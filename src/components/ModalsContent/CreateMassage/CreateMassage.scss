@@ -1,0 +1,33 @@
+.createMassage-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h2 {
+    margin-top: 0;
+    margin-bottom: 40px;
+    font-size: 29px;
+    font-style: italic;
+    font-weight: 700;
+    -webkit-text-fill-color: var(--color-black);
+    -webkit-text-stroke: 1px var(--color-accent);
+  }
+
+  .createMassage-content {
+    width: 100%;
+    margin-bottom: 30px;
+
+    h3 {
+      margin: 0 0 10px 0;
+      font-style: italic;
+      font-weight: normal;
+    }
+  }
+
+  button {
+    font-size: 18px;
+    font-weight: bold;
+    font-style: italic;
+    height: 33px;
+  }
+}

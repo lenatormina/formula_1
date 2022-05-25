@@ -1,0 +1,99 @@
+.select-wrapper {
+  position: relative;
+}
+
+.select {
+  position: relative;
+  font-size: 18px;
+  font-weight: bold;
+  font-style: italic;
+
+  .select-textTitle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    background-color: var(--color-accent);
+    padding: 5px 16px;
+    border: 1px solid var(--color-black);
+    cursor: pointer;
+
+    .select-arrow {
+      width: 26px;
+      height: 20px;
+      position: relative;
+      transition: all .2s;
+      margin-left: auto;
+
+      &:before {
+        content: '';
+        position: absolute;
+        top: 10px;
+        left: 3px;
+        width: 50%;
+        height: 2px;
+        background-color: var(--color-black);
+        transform: rotate(45deg);
+      }
+      &:after {
+        content: '';
+        position: absolute;
+        top: 10px;
+        right: 2px;
+        width: 50%;
+        height: 2px;
+        background-color: var(--color-black);
+        transform: rotate(-45deg);
+      }
+    }
+
+    .select-arrow-down {
+      transform: rotate(-90deg);
+    }
+  }
+
+  .select-textTitle-error {
+    border: 2px solid red;
+  }
+
+  .select-optionsBlock {
+    position: absolute;
+    width: 100%;
+    top: 51px;
+    background-color: var(--color-accent);
+    border-radius: 10px;
+    border: 1px solid var(--color-black);
+    box-shadow: 0 4px 8px 3px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+
+  .backgroundSelect {
+    position: fixed;
+    content: '';
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-bacdrop);
+  }
+
+  .select-options {
+    list-style: none;
+    margin: 0;
+    padding: 20px 0;
+  }
+
+  .elementSelect {
+    padding: 8px 20px;
+    cursor: pointer;
+  }
+}
+
+.select-text-error {
+  position: absolute;
+  bottom: -16px;
+  left: 0;
+  color: red;
+}

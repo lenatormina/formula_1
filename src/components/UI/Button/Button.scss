@@ -1,0 +1,18 @@
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 33px;
+  border-radius: 10px;
+  background-color: var(--color-accent);
+  border: none;
+  box-shadow: 0 3px 18px -5px rgba(34, 60, 80, 0.25);
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.button-disabled {
+  background-color: var(--color-accent-bold);
+  cursor: initial;
+}
