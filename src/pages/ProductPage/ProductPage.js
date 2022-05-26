@@ -5,8 +5,8 @@ import { Button} from "../../components/UI/Button/Button";
 import { Spinner } from "../../components/UI/Spinner/Spinner";
 import "./ProductPage.scss";
 import {BasketContext} from "../../context/basket-context";
-import img from "../../assets/img/2022-05-26 07.57.34.jpg"
 import {productIdMock} from "../../mock/mockCatalog";
+import img from "../../assets/img/male_grownup2.jpeg"
 
 export const ProductPage = () => {
   const { loading, request } = useHttpClient();
@@ -52,6 +52,7 @@ export const ProductPage = () => {
     if (item.count <= 0) return "product-size_disabled product-size-button"
     return "product-size-button"
   }
+  console.log(product)
 
   return (
     <div className="container product">

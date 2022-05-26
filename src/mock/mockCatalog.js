@@ -103,7 +103,7 @@ export const catalogMock = [
 export const productIdMock = {
   name: "Название-4",
   price:410,
-  img:"img/male_grownup1.jpeg",
+  img:"img/male_grownup2.jpeg",
   categories:"Футболка",
   gender:"male",
   age:"grownup",
