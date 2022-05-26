@@ -5,6 +5,8 @@ import { Button} from "../../components/UI/Button/Button";
 import { Spinner } from "../../components/UI/Spinner/Spinner";
 import "./ProductPage.scss";
 import {BasketContext} from "../../context/basket-context";
+import img from "../../assets/img/2022-05-26 07.57.34.jpg"
+import {productIdMock} from "../../mock/mockCatalog";
 
 export const ProductPage = () => {
   const { loading, request } = useHttpClient();
@@ -13,21 +15,13 @@ export const ProductPage = () => {
   const goBack = () => navigate(-1);
   const { addItemBasket } = useContext(BasketContext);
 
-  const [product, setProduct] = useState(null);
-  const mockSize = [ //доступная размерность у продукта, затем брать из product.size
-    { name: "x", count: 0 },
-    { name: "m", count: 2 },
-    { name: "l", count: 0 },
-    { name: "xl", count: 1 },
-    { name: "xxl", count: 2 },
-    { name: "xxxl", count: 0 },
-  ]
+  const [product, setProduct] = useState(productIdMock);
 
-  useEffect(() => {
-    request(`catalog/${id}`, 'GET').then(res => {
-      setProduct({...res, sizes: mockSize});
-    });
-  }, [id, request]);
+  // useEffect(() => {
+  //   request(`catalog/${id}`, 'GET').then(res => {
+  //     setProduct({res});
+  //   });
+  // }, [id, request]);
 
   const [selectedSize, setSelectedSize] = useState('');
   const [basketDisabled, setBasketDisabled] = useState(true);
@@ -69,7 +63,7 @@ export const ProductPage = () => {
             <>
               <h1>{product?.categories} "{product?.name}"</h1>
               <div className="product-img-wrapper">
-                <img src={product?.img} alt={product?.name}/>
+                <img src={img} alt={product?.name}/>
                 <div className="product-size">
                   <h3 className="product-size-title">Таблица размеров</h3>
                   <div className="product-size-btn-group">

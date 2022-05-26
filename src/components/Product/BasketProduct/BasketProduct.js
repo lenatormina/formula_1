@@ -1,6 +1,7 @@
 import React from "react";
 import "./BasketProduct.scss";
 import {Button} from "../../UI/Button/Button";
+import img from "../../../assets/img/2022-05-26 07.57.34.jpg"
 
 export const BasketProduct = ({ product, removeProduct }) => {
 

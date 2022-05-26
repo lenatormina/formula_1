@@ -1,10 +1,11 @@
 import React, {useEffect, useState} from "react";
+import { useSearchParams } from "react-router-dom";
 import { Catalog } from "../../components/Catalog/Catalog";
 import { Filter } from "../../components/Filter/Filter";
 import { useHttpClient } from "../../api/useHttpClient";
 import { onlyNumber } from "../../utils/validateFunctions";
-
 import "./CatalogPage.scss";
+import {catalogMock} from "../../mock/mockCatalog";
 
 export const CatalogPage = () => {
   const [catalog, setCatalog] = useState([]);
@@ -23,7 +24,7 @@ export const CatalogPage = () => {
 
   useEffect(() => {
     request('catalog', 'GET').then(res => {
-      setCatalog(res);
+      setCatalog(catalogMock);
     });
   }, [request]);
 
